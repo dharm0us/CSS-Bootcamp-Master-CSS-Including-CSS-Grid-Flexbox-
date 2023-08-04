@@ -116,10 +116,6 @@ body {
     cursor: pointer;
 }
 
-.dropdown {
-    display: none;
-}
-
 .second-nav {
     grid-column: 2 / 10;
     grid-row: 3 / 4;
@@ -170,7 +166,6 @@ body {
     /* This causes the lines to draw from opposite directions. */
 }
 
-/*
 .second-nav-item:first-child {
     position: relative;
 }
@@ -181,17 +176,13 @@ body {
     width: 70rem;
     background-color: #fffeee;
     padding: 1.6rem;
-    display: none;
+    display: grid;
     grid-template-columns: repeat(7, 10rem);
     visibility: hidden;
     opacity: 0;
+    /* 
     z-index: 100;
-    transition: all 1s;
-}
-
-.second-nav-item:first-child:hover .dropdown {
-    visibility: visible;
-    opacity: 1;
+    transition: all 1s; */
 }
 
 .dropdown-first-list {
@@ -223,5 +214,10 @@ body {
 .dropdown-list-link:hover {
     color: #458a9f;
 }
-*/
+
+.second-nav-item:first-child:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+
 /* end of navbar */
