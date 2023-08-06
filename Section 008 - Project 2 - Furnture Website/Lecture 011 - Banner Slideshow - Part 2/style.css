@@ -217,6 +217,7 @@ body {
 .dropdown-list-link:hover {
     color: #458a9f;
 }
+
 /* end of navbar */
 
 /* banner */
@@ -300,31 +301,57 @@ body {
 }
 
 @keyframes slideshow {
-    0% {left: 0}
+    0% {
+        left: 0
+    }
 
-    10% {left: 0}
+    10% {
+        left: 0
+    }
 
-    15% {left: -100%}
+    15% {
+        left: -100%
+    }
 
-    25% {left: -100%}
+    25% {
+        left: -100%
+    }
 
-    30% {left: -200%}
+    30% {
+        left: -200%
+    }
 
-    40% {left: -200%}
+    40% {
+        left: -200%
+    }
 
-    45% {left: -300%}
+    45% {
+        left: -300%
+    }
 
-    55% {left: -300%}
+    55% {
+        left: -300%
+    }
 
-    60% {left: -200%}
+    60% {
+        left: -200%
+    }
 
-    70% {left: -200%}
+    70% {
+        left: -200%
+    }
 
-    75% {left: -100%}
+    75% {
+        left: -100%
+    }
 
-    85% {left: -100%}
+    85% {
+        left: -100%
+    }
 
-    90% {left: 0}
+    90% {
+        left: 0
+    }
 }
 
 .slide-btn {
@@ -361,36 +388,24 @@ body {
     left: 53%;
 }
 
-.slide-btn-1:focus ~ .slideshow-wrapper {
+.slide-btn-1:focus~.slideshow-wrapper {
     animation: none;
     left: 0;
 }
 
-.slide-btn-2:focus ~ .slideshow-wrapper {
+.slide-btn-2:focus~.slideshow-wrapper {
     animation: none;
     left: -100%;
 }
 
-.slide-btn-3:focus ~ .slideshow-wrapper {
+.slide-btn-3:focus~.slideshow-wrapper {
     animation: none;
     left: -200%;
 }
 
-.slide-btn-4:focus ~ .slideshow-wrapper {
+.slide-btn-4:focus~.slideshow-wrapper {
     animation: none;
     left: -300%;
 }
+
 /* end of banner */
-
-
-
-
-
-
-
-
-
-
-
-
-
