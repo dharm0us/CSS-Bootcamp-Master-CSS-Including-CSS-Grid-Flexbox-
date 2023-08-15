@@ -34,7 +34,7 @@ body {
 header {
     color: black;
     padding: 16px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .topic-name {
@@ -65,6 +65,7 @@ header {
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
+    border-radius: 10px;
 }
 
 /* end header */
@@ -85,8 +86,7 @@ header {
 .news-item a {
     color: rgb(51, 170, 255);
     font-size: 3rem;
-    /* padding: 16px; */
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
 }
 
 .news-publisher {
@@ -135,11 +135,10 @@ header {
 
 footer {
     display: grid;
-    /* padding: 16px; */
-    grid-template-columns: repeat(3, minmax(min-content, 10rem));
+    grid-template-columns: repeat(7, minmax(min-content, 5rem));
     justify-content: space-between;
-    grid-template-rows: 1fr 1fr;
-    border: 2px solid green;
+    grid-template-rows: repeat(3, 1fr);
+    /* border: 2px solid green; */
     row-gap: 2rem;
     column-gap: 3rem;
 }
@@ -147,16 +146,18 @@ footer {
 .prev {
     grid-column: 1/2;
     grid-row: 1/2;
+    margin-left: 1rem;
 }
 
 .home {
-    grid-column: 2/3;
+    grid-column: 3/6;
     grid-row: 1/2;
 }
 
 .next {
-    grid-column: 3/4;
+    grid-column: -2/-1;
     grid-row: 1/2;
+    margin-right: 1rem;
 }
 
 footer .tab {
@@ -167,6 +168,6 @@ footer .tab {
 }
 
 footer .contact {
-    grid-column: 2/3;
+    grid-column: 3/6;
     grid-row: 2/3;
 }
