@@ -1,0 +1,172 @@
+/* start common styles */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', Trebuchet, Verdana, sans-serif;
+    /* font-family: 'Alegreya', serif; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.centered-content {
+    display: grid;
+    place-items: center;
+    /* shorthand to center both horizontally and vertically */
+    text-align: center;
+    /* center inline elements or text */
+}
+
+/* end common styles */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+}
+
+/* start header */
+header {
+    color: black;
+    padding: 16px;
+    border: 2px solid red;
+}
+
+.topic-name {
+    font-size: 3.45rem;
+    font-weight: 400;
+    text-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.topic-desc {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tabs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 14rem);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    grid-auto-rows: 2.6rem;
+}
+
+.tab {
+    background-color: rgb(34, 136, 187);
+    color: white;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+/* end header */
+
+/* start news items */
+.date {
+    background-color: rgb(187, 187, 187);
+    color: white;
+    font-size: 2rem;
+    justify-self: start;
+    padding: 1rem;
+}
+
+.news-title {
+    padding-left: 1rem;
+}
+
+.news-item a {
+    color: rgb(51, 170, 255);
+    font-size: 3rem;
+    /* padding: 16px; */
+    border: 2px solid orange;
+}
+
+.news-publisher {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: #888888;
+    padding-left: 1rem;
+}
+
+.news-item a:visited {
+    color: #888888;
+}
+
+.social-menu {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(min-content, 1fr));
+}
+
+.fb {
+    background-image: url('https://d2gu2cv4izgboy.cloudfront.net/images/social/facebook.png');
+}
+
+.twitter {
+    background-image: url('https://d2gu2cv4izgboy.cloudfront.net/images/social/twitter.png');
+}
+
+.linkedin {
+    background-image: url('https://d2gu2cv4izgboy.cloudfront.net/images/social/linkedin.png');
+}
+
+.email {
+    background-image: url('https://d2gu2cv4izgboy.cloudfront.net/images/social/email.png');
+}
+
+/* Common styles for all the social icons */
+.social-menu>div {
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* end news items */
+
+footer {
+    display: grid;
+    /* padding: 16px; */
+    grid-template-columns: repeat(3, minmax(min-content, 10rem));
+    justify-content: space-between;
+    grid-template-rows: 1fr 1fr;
+    border: 2px solid green;
+    row-gap: 2rem;
+    column-gap: 3rem;
+}
+
+.prev {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.home {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.next {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+footer .tab {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer .contact {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
